@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康生活网站 - 项目目录</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #f9fafb;
+        }
+        h1, h2 {
+            color: #166534;
+            border-bottom: 2px solid #22c55e;
+            padding-bottom: 0.5rem;
+        }
+        .section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .file-list {
+            list-style: none;
+            padding: 0;
+        }
+        .file-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .file-list li:last-child {
+            border-bottom: none;
+        }
+        .folder {
+            color: #166534;
+            font-weight: 500;
+        }
+        .file {
+            color: #374151;
+        }
+        .path {
+            color: #6b7280;
+            font-size: 0.875rem;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>健康生活网站 - 项目目录</h1>
+    
+    <div class="section">
+        <h2>页面文件 (Pages)</h2>
+        <ul class="file-list">
+            <li><span class="folder">app/</span><span class="file">page.tsx</span> - <span class="path">首页</span></li>
+            <li><span class="folder">app/home/</span><span class="file">page.tsx</span> - <span class="path">主页内容</span></li>
+            <li><span class="folder">app/products/</span><span class="file">page.tsx</span> - <span class="path">产品列表页</span></li>
+            <li><span class="folder">app/products/[id]/</span><span class="file">page.tsx</span> - <span class="path">产品详情页</span></li>
+            <li><span class="folder">app/courses/</span><span class="file">page.tsx</span> - <span class="path">课程列表页</span></li>
+            <li><span class="folder">app/courses/[id]/</span><span class="file">page.tsx</span> - <span class="path">课程详情页</span></li>
+            <li><span class="folder">app/tcm/</span><span class="file">page.tsx</span> - <span class="path">中医养生页面</span></li>
+            <li><span class="folder">app/blog/</span><span class="file">page.tsx</span> - <span class="path">博客列表页</span></li>
+            <li><span class="folder">app/blog/[slug]/</span><span class="file">page.tsx</span> - <span class="path">博客文章页</span></li>
+            <li><span class="folder">app/health-tracker/</span><span class="file">page.tsx</span> - <span class="path">健康追踪页面</span></li>
+            <li><span class="folder">app/community/</span><span class="file">page.tsx</span> - <span class="path">社区页面</span></li>
+            <li><span class="folder">app/community/[id]/</span><span class="file">page.tsx</span> - <span class="path">帖子详情页</span></li>
+            <li><span class="folder">app/profile/</span><span class="file">page.tsx</span> - <span class="path">个人资料页</span></li>
+            <li><span class="folder">app/login/</span><span class="file">page.tsx</span> - <span class="path">登录页面</span></li>
+            <li><span class="folder">app/register/</span><span class="file">page.tsx</span> - <span class="path">注册页面</span></li>
+            <li><span class="folder">app/cart/</span><span class="file">page.tsx</span> - <span class="path">购物车页面</span></li>
+            <li><span class="folder">app/checkout/</span><span class="file">page.tsx</span> - <span class="path">结账页面</span></li>
+            <li><span class="folder">app/orders/</span><span class="file">page.tsx</span> - <span class="path">订单列表页</span></li>
+            <li><span class="folder">app/orders/[id]/</span><span class="file">page.tsx</span> - <span class="path">订单详情页</span></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>组件 (Components)</h2>
+        <ul class="file-list">
+            <li><span class="folder">app/components/</span><span class="file">Navbar.tsx</span> - <span class="path">导航栏组件</span></li>
+            <li><span class="folder">app/components/</span><span class="file">Footer.tsx</span> - <span class="path">页脚组件</span></li>
+            <li><span class="folder">app/components/</span><span class="file">HealthyFoodShowcase.tsx</span> - <span class="path">健康食品展示</span></li>
+            <li><span class="folder">app/components/</span><span class="file">HealthCoursesSection.tsx</span> - <span class="path">健康课程展示</span></li>
+            <li><span class="folder">app/components/</span><span class="file">TCMFeature.tsx</span> - <span class="path">中医特色展示</span></li>
+            <li><span class="folder">app/components/</span><span class="file">UserTestimonials.tsx</span> - <span class="path">用户评价</span></li>
+            <li><span class="folder">app/components/</span><span class="file">BlogPosts.tsx</span> - <span class="path">博客文章列表</span></li>
+            <li><span class="folder">app/components/</span><span class="file">ContactForm.tsx</span> - <span class="path">联系表单</span></li>
+            <li><span class="folder">app/components/</span><span class="file">CartIcon.tsx</span> - <span class="path">购物车图标</span></li>
+            <li><span class="folder">app/components/</span><span class="file">SearchBar.tsx</span> - <span class="path">搜索栏</span></li>
+            <li><span class="folder">app/components/</span><span class="file">PostForm.tsx</span> - <span class="path">发帖表单</span></li>
+            <li><span class="folder">app/components/</span><span class="file">PostList.tsx</span> - <span class="path">帖子列表</span></li>
+            <li><span class="folder">app/components/</span><span class="file">Comments.tsx</span> - <span class="path">评论组件</span></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>API 路由 (API Routes)</h2>
+        <ul class="file-list">
+            <li><span class="folder">app/api/auth/</span><span class="file">route.ts</span> - <span class="path">认证接口</span></li>
+            <li><span class="folder">app/api/user/</span><span class="file">route.ts</span> - <span class="path">用户接口</span></li>
+            <li><span class="folder">app/api/posts/</span><span class="file">route.ts</span> - <span class="path">帖子接口</span></li>
+            <li><span class="folder">app/api/comments/</span><span class="file">route.ts</span> - <span class="path">评论接口</span></li>
+            <li><span class="folder">app/api/orders/</span><span class="file">route.ts</span> - <span class="path">订单接口</span></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>上下文 (Contexts)</h2>
+        <ul class="file-list">
+            <li><span class="folder">app/contexts/</span><span class="file">AuthContext.tsx</span> - <span class="path">认证上下文</span></li>
+            <li><span class="folder">app/contexts/</span><span class="file">CartContext.tsx</span> - <span class="path">购物车上下文</span></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>类型定义 (Types)</h2>
+        <ul class="file-list">
+            <li><span class="folder">app/types/</span><span class="file">product.ts</span> - <span class="path">产品类型定义</span></li>
+            <li><span class="folder">app/types/</span><span class="file">health.ts</span> - <span class="path">健康记录类型定义</span></li>
+            <li><span class="folder">app/types/</span><span class="file">community.ts</span> - <span class="path">社区类型定义</span></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>工具函数 (Utils)</h2>
+        <ul class="file-list">
+            <li><span class="folder">app/lib/</span><span class="file">utils.ts</span> - <span class="path">通用工具函数</span></li>
+            <li><span class="folder">app/lib/</span><span class="file">recommendations.ts</span> - <span class="path">推荐算法</span></li>
+        </ul>
+    </div>
+</body>
+</html>
+
